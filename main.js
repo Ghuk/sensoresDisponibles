@@ -7,12 +7,12 @@ function avaliableSensors(){
 	for(var i = 0; i < featuresWindow.length; i++){
 		if (window.featuresWindow[i].api) { //Sensor acelerometro
 			document.getElementById(featuresWindow[i].name).innerText = 'Soportado';
-		}else{innerText(document.getElementById(featuresWindow[i].name).innerText = 'No Soportado';);}
+		}else{document.getElementById(featuresWindow[i].name).innerText = 'No Soportado';}
 	}
 	for(var i = 0; i < featuresNavigator.length; i++){
 		if (navigator.featuresNavigator[i].api) { //Sensor acelerometro
 			document.getElementById(featuresNavigator[i].name).innerText = 'Soportado';
-		}else{innerText(document.getElementById(featuresNavigator[i].name).innerText = 'No Soportado';);}
+		}else{document.getElementById(featuresNavigator[i].name).innerText = 'No Soportado';}
 	}
 
     /*
