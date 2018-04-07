@@ -1,18 +1,18 @@
 function avaliableSensors(){
 
-	var featuresWindow = [{api:"Accelerometer",name:"acelerometro"},{api:"ProximitySensor","proximidad"},{api:"Gyroscope",name:"giroscopio"},
-							{api:"Magnetometer",name:"magnetometro"},{api:"AmbientLightSensor",name:"luz"}];
-	var featuresNavigator=  [{api:"getUserMedia",name:"camara"},{api:"bluetooth",name:"bluetooth"}];
+	var featuresWindow = [{api:Accelerometer,name:"acelerometro"},{api:ProximitySensor,"proximidad"},{api:Gyroscope,name:"giroscopio"},
+							{api:Magnetometer,name:"magnetometro"},{api:AmbientLightSensor,name:"luz"}];
+	var featuresNavigator=  [{api:getUserMedia,name:"camara"},{api:bluetooth,name:"bluetooth"}];
 
 	for(var i = 0; i < featuresWindow.length; i++){
 		if (window.featuresWindow[i].api) { //Sensor acelerometro
 			document.getElementById(featuresWindow[i].name).innerText = 'Soportado';
 		}else{document.getElementById(featuresWindow[i].name).innerText = 'No Soportado';}
 	}
-	for(var i = 0; i < featuresNavigator.length; i++){
-		if (navigator.featuresNavigator[i].api) { //Sensor acelerometro
-			document.getElementById(featuresNavigator[i].name).innerText = 'Soportado';
-		}else{document.getElementById(featuresNavigator[i].name).innerText = 'No Soportado';}
+	for(var j = 0; j < featuresNavigator.length; j++){
+		if (navigator.featuresNavigator[j].api) { //Sensor acelerometro
+			document.getElementById(featuresNavigator[j].name).innerText = 'Soportado';
+		}else{document.getElementById(featuresNavigator[j].name).innerText = 'No Soportado';}
 	}
 
     /*
