@@ -42,10 +42,11 @@ function avaliableSensors(){
 
 	if(navigator.bluetooth){ // Bluetooth
 		innerText('bluetooth','Soportado');
-	}else{innerText('bluetooth','No Soportado');}
-	*/
+	}else{innerText('bluetooth','No Soportado');}*/
+	
 }
+
 /*
 function innerText(elementId,text){
 	document.getElementById(elementId).innerText = text;
-}/*
+}*/
