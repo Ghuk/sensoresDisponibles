@@ -1,14 +1,17 @@
 function avaliableSensors(){
 
-	var featuresWindow = [{api:Accelerometer,name:"acelerometro"},{api:ProximitySensor,"proximidad"},{api:Gyroscope,name:"giroscopio"},
-							{api:Magnetometer,name:"magnetometro"},{api:AmbientLightSensor,name:"luz"}];
+	var featuresWindow = [{api:Accelerometer,name:"acelerometro"},{api:ProximitySensor,"proximidad"},{api:Gyroscope,name:"giroscopio"},{api:Magnetometer,name:"magnetometro"},{api:AmbientLightSensor,name:"luz"}];
 	var featuresNavigator=  [{api:getUserMedia,name:"camara"},{api:bluetooth,name:"bluetooth"}];
 
+	console.log(featuresWindow);
+
 	for(var i = 0; i < featuresWindow.length; i++){
+		console.log("Entre al 1 for");
 		if (window.featuresWindow[i].api) { //Sensor acelerometro
 			document.getElementById(featuresWindow[i].name).innerText = 'Soportado';
 		}else{document.getElementById(featuresWindow[i].name).innerText = 'No Soportado';}
 	}
+	console.log("Termine el 1 for");
 	for(var j = 0; j < featuresNavigator.length; j++){
 		if (navigator.featuresNavigator[j].api) { //Sensor acelerometro
 			document.getElementById(featuresNavigator[j].name).innerText = 'Soportado';
