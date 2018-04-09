@@ -1,0 +1,14 @@
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color: #fff;
+}
+table{
+	border-spacing: 5px;
+}
+table th{
+	padding: 0.5em;
+    background-color: black;
+    color: white;
+}
