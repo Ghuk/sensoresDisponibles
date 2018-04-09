@@ -17,7 +17,6 @@ function avaliableSensors(){
 			document.getElementById(featuresNavigator[j].name).innerText = 'Soportado';
 		}else{document.getElementById(featuresNavigator[j].name).innerText = 'No Soportado';}
 	}
-
     */
 	if (window.Accelerometer) { //Sensor acelerometro
 	  innerText('acelerometro','Soportado');
